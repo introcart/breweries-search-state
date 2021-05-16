@@ -4,6 +4,7 @@ const API = 'https://api.openbrewerydb.org/breweries?per_page=50'
 async function getBreweries(state){
   for (let i = 0; i <= 20; i++){
     const res = await axios.get(`${API}&by_state=${state}&page=${i}}`)
+    document.querySelector('#state-header').innerText = `${state} Breweries`;
     for(let brewery of res.data){
       const div = document.createElement('div')
       div.classList.add('card')

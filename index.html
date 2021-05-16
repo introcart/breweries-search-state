@@ -10,20 +10,23 @@
 
 </head>
 
-<body>
-  <div class="container">
+<body></body>
+ 
+  <div class="container my-5">
+    <h1 class="display-1">Find Breweries by State</h1>
   <form id="breweryForm">
     <div class="form-group">
-      <label for="exampleInputEmail1">State</label>
-      <input type="text" name="state" placeholder="Enter State">
+      <label class="form-label"for="brewery-search">State</label>
+      <input class="form-control"type="text" name="state" placeholder="Enter State" id="brewery-search">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <br>
+    <button type="submit" class="btn btn-primary">Search</button>
   </form>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script src="app.js"></script>
-  <h1>Breweries</h1>
   <div class="container">
+    <h2 class="display-2" id="state-header"></h2>
     
   </div>
 
